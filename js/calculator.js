@@ -52,7 +52,7 @@ function get_operand(btn) {
         if(operator) return;  
         // num1が空の場合、処理終了
         if(!num1) return;
-        console.log("btn.value" , btn.value)
+
         operator = btn.value;
         // 入力値画面に表示する
         document.getElementById("inputValue").innerHTML = num1 + operator;
@@ -77,8 +77,6 @@ function get_clear() {
             // それ以外の場合は末尾を一文字削除する
             num1 = num1.slice(0, -1);
         }
-
-        console.log(num1)
 
         // 入力値画面に表示する
         document.getElementById("inputValue").innerHTML = num1;
